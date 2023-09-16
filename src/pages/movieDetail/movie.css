@@ -1,0 +1,207 @@
+.movie {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.movie__intro {
+    width: 100%;
+    top: 0;
+}
+
+.header__icon{
+    width: 13rem;
+    cursor: pointer;
+    position: absolute;
+    z-index: 100;
+    top:30px;
+    left:0px
+}
+
+.right,.side__bar{
+    float: left;
+    padding: 20px;
+}
+
+.side__bar{
+    width: 226px;
+    height: 982px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.hmtu{
+    padding-top: 7em;
+}
+
+.movie__quiz{
+    margin: 40px;
+    padding: 40px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 265px;
+    border-radius: 20px;
+    border: 1px solid #BE123C;
+}
+
+.play{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    top: 671px;
+    margin-bottom:20px ;
+}
+.sub{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+button{
+    width: 122px;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 40px;
+    background: #BE123C33;
+    border-radius: 30px;
+}
+
+.moviebox__logo{
+    width: 185px;
+}
+
+.home,.movies,.series,.upcoming{
+    width: 226px;
+    height: 86px;
+    top: 284px;
+}
+
+.logout{
+    width: 114px;
+    height: 30px;
+    top:883px;
+    left: 42px;
+}
+
+
+.movie__backdrop {
+    width: 1198px;
+    height: 449px;
+    left: 263px;
+    border-radius: 20px;
+    object-fit:cover;
+    object-position: 0 35%;
+}
+
+.movie__detail {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+}
+
+.movie__detailLeft {
+    margin-right: 30px;
+}
+
+.movie__poster {
+    width:250px;
+}
+
+.movie__detailRight {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content:space-between ;
+}
+
+.movie__detailRightTop > div{
+    margin-bottom: .5rem;
+}
+
+.movie__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.movie__voteCount {
+    margin-left: 1rem;
+}
+
+.movie__genres {
+    margin: 1.25rem 0;
+}
+
+.movie__genre {
+    padding: .5rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.movie__detailRightBottom {
+    margin: 2rem 0;
+    flex: 0.8;
+}
+
+.overviewText, .movie__stars__text {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.overviewText > div:last-of-type {
+    margin-left: auto;
+}
+
+
+
+.movie__homeButton {
+    background-color:rgb(255, 0, 0);
+    
+}
+
+.movie__imdbButton {
+    background-color:#f3ce13;
+} 
+
+.newTab {
+    margin-left: 1.4rem;
+}
+
+.production{
+    flex: 0.8;
+}
+
+.movie__production {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.movie__productionCompany {
+    width: 60px;
+    padding:2rem;
+}
+
+
+.productionCompanyImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    width: 60px;
+
+}
