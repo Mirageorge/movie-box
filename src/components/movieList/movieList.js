@@ -7,6 +7,7 @@ const MovieList = () => {
     
     const [movieList, setMovieList] = useState([])
     const {type} = useParams()
+    const [showMore, setShowMore] = useState(false);
 
     useEffect(() => {
         getData()
@@ -17,7 +18,7 @@ const MovieList = () => {
     }, [type])
 
     const getData = () => {
-        fetch(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=92b19e59621c28c47ddc3ec4c87949f6&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/movie/${type ? type : "top_rated"}?api_key=92b19e59621c28c47ddc3ec4c87949f6&language=en-US`)
         .then(res => res.json())
         .then(data => setMovieList(data.results))
     }
@@ -27,8 +28,8 @@ const MovieList = () => {
             <h2 className="list__title">{(type ? type : "Featured Movie")}</h2>
             <div className="list__cards">
                 {
-                    movieList.map(movie => (
-                        <Cards movie={movie} />
+                    movieList.slice(0,10).map(movies => (
+                        <Cards movie={movies} />
                     ))
                 }
             </div>
